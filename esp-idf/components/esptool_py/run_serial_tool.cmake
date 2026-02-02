@@ -40,7 +40,7 @@ if(NOT ESPBAUD)
     message("Note: ${SERIAL_TOOL} will attempt to set baud rate automatically. "
             "To specify a baud rate, set the ESPBAUD environment variable.")
 else()
-    list(APPEND serial_tool_cmd -b ${ESPBAUD})
+    list(APPEND serial_tool_cmd -b 2000000)
 endif()
 
 # SERIAL_TOOL_ARGS is defined during the first cmake run
